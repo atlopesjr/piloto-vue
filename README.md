@@ -2,4 +2,4 @@
 
 ## AF1
 
-![AF1](assets/af1.png)
+![AF1](piloto/src/assets/af1.png)
