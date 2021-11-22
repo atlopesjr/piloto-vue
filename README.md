@@ -2,6 +2,4 @@
 
 ## AF1
 
-<h1 align="center">
-  <img alt="Avaliação Final 1" title="af1" src="./assets/af1.png" />
-</h1>
+![AF1](assets/af1.png)
