@@ -15,22 +15,22 @@ const routes = [
     component: Home,
   },
   {
-    path: "/",
+    path: "/f1",
     name: "F1",
     component: Fone,
   },
   {
-    path: "/",
+    path: "/ftruck",
     name: "Ftruck",
     component: Ftruck,
   },
   {
-    path: "/",
+    path: "/motogp",
     name: "Motogp",
     component: Motogp,
   },
   {
-    path: "/",
+    path: "/nascar",
     name: "Nascar",
     component: Nascar,
   },

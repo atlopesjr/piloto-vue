@@ -12,10 +12,10 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn to="/">F1</v-btn>
-        <v-btn to="/">Formula Truck</v-btn>
-        <v-btn to="/">Moto GP</v-btn>
-        <v-btn to="/">Nascar</v-btn>
+        <v-btn to="/f1">F1</v-btn>
+        <v-btn to="ftruck">Formula Truck</v-btn>
+        <v-btn to="/motogp">Moto GP</v-btn>
+        <v-btn to="/nascar">Nascar</v-btn>
 
         </v-app-bar>
 
