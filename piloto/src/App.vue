@@ -2,56 +2,8 @@
   <v-app>
     <v-system-bar color="deep-purple darken-3"></v-system-bar>
 
-    <v-app-bar
-      color="deep-purple accent-4"
-      dark
-      dense
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    <Appbar></Appbar>
 
-      <v-toolbar-title>Piloto</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-    </v-app-bar>
-
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      bottom
-      temporary
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-title>Item 1</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Item 2</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Item 3</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Item 4</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Item 5</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
       <v-container fluid>
         <router-view></router-view>
@@ -120,8 +72,13 @@
 
 <script>
 
+import Appbar from "@/components/Appbar"
+
 export default {
   name: 'App',
+  components: {
+    Appbar  
+  },
 
   data: () => ({
     drawer: false,
