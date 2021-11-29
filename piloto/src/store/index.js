@@ -4,7 +4,50 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    pilotos: [
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+      {
+        nome: "",
+        idade: "",
+        nacionalidade: "",
+      },
+    ],
+  },
   mutations: {},
   actions: {},
   modules: {},
