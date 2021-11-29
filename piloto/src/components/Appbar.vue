@@ -33,20 +33,8 @@
             v-model="group"
             active-class="deep-purple--text text--accent-4"
             >
-            <v-list-item>
-                <v-list-item-title>Item 1</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item>
-                <v-list-item-title>Item 2</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item>
-                <v-list-item-title>Item 3</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item>
-                <v-list-item-title>Item 4</v-list-item-title>
+            <v-list-item v-for="(item, i) in items" :key="i" :to="item.link" link>
+                <v-list-item-title>{{item.text}}</v-list-item-title>
             </v-list-item>
 
             </v-list-item-group>
@@ -62,12 +50,23 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
-    value: 1,
-    icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
+    items: [
+        {
+            text: 'F1',
+            link: '/f1',
+        },
+        {
+            text: 'Formula Truck',
+            link: '/ftruck',
+        },
+        {
+            text: 'Moto GP',
+            link: '/motogp',
+        },
+        {
+            text: 'Nascar',
+            link: '/nascar',
+        },
     ],
   }),
   watch: {
