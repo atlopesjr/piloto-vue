@@ -4,16 +4,16 @@
     max-width="344"
   >
     <v-img
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      :src="require(`@/assets/${cardInfo.picture}`)"
       height="200px"
     ></v-img>
 
     <v-card-title>
-      Top western road trips
+      {{cardInfo.name}}
     </v-card-title>
 
     <v-card-subtitle>
-      1,000 miles of wonder
+      {{cardInfo.country}}
     </v-card-subtitle>
 
     <v-card-actions>
@@ -21,7 +21,7 @@
         color="orange lighten-2"
         text
       >
-        Explore
+        More
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -30,7 +30,6 @@
         icon
         @click="show = !show"
       >
-      {{cardid}}
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
     </v-card-actions>
@@ -40,7 +39,7 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+          {{cardInfo.age}}, {{cardInfo.category}} pilot.
         </v-card-text>
       </div>
     </v-expand-transition>
@@ -49,9 +48,10 @@
 
 <script>
   export default {
-    props: ['cardid'],
+    props: ['cardid','cardInfo'],
     data: () => ({
       show: false,
+      picture: this.$store.state.pilots
     }),
   }
 </script>

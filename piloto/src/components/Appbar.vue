@@ -11,12 +11,12 @@
         <v-toolbar-title>Piloto</v-toolbar-title>
 
         <v-spacer></v-spacer>
-
-        <v-btn to="/f1">F1</v-btn>
-        <v-btn to="ftruck">Formula Truck</v-btn>
-        <v-btn to="/motogp">Moto GP</v-btn>
-        <v-btn to="/nascar">Nascar</v-btn>
-
+        
+        <v-btn text to="/f1">F1</v-btn>
+        <v-btn text to="/ftruck">Formula Truck</v-btn>
+        <v-btn text to="/motogp">Moto GP</v-btn>
+        <v-btn text to="/nascar">Nascar</v-btn>
+        
         </v-app-bar>
 
         <v-navigation-drawer
