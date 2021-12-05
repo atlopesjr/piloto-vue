@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -64,8 +65,31 @@ export default new Vuex.Store({
       },
     ],
     title: "Pilots",
+    f1title: "f1 drivers",
+    drivers: [],
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+    SET_DRIVERS(state, payload) {
+      state.drivers = payload;
+    },
+  },
+  actions: {
+    fetchDrivers({ commit }) {
+      axios
+        .get("http://ergast.com/api/f1/2021/drivers.json")
+        .then((res) => {
+          const payload = res.data.MRData.DriverTable.Drivers;
+          commit("SET_DRIVERS", payload);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+  getters: {
+    bigTitle(state) {
+      return state.f1title.toUpperCase();
+    },
+  },
   modules: {},
 });

@@ -14,7 +14,6 @@
       color="deep-purple accent-4"
       dark
       padless
-      app
     >
       <v-card
         flat
@@ -50,7 +49,6 @@
       :value="value"
       color="primary"
       horizontal
-      app
     >
       <v-btn>
         <span>Recents</span>
