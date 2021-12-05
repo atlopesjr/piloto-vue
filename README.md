@@ -7,8 +7,8 @@
 
 ## AF2
 
-![AF2](piloto/src/assets/af2-1.png)
 ![AF2-2](piloto/src/assets/af2-2.png)
+![AF2](piloto/src/assets/af2-1.png)
 
 ## AF3
 
