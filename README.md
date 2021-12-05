@@ -9,3 +9,9 @@
 
 ![AF2](piloto/src/assets/af2-1.png)
 ![AF2-2](piloto/src/assets/af2-2.png)
+
+## AF3
+
+### Dados da API são exibidos na página "/f1" em uma tabela simples.
+
+![AF3](piloto/src/assets/af3.png)
