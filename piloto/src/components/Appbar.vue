@@ -8,7 +8,7 @@
         >
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-        <v-toolbar-title>Piloto</v-toolbar-title>
+        <v-toolbar-title style="cursor: pointer" @click="$router.push('/')">Piloto</v-toolbar-title>
 
         <v-spacer></v-spacer>
         
